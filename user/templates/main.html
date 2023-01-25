@@ -1,0 +1,191 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="{% static 'style1.css' %}" />
+    <title>Bachelor Point</title>
+  </head>
+  <body>
+  <div class="menu-bar">
+      <h1 class="logo">BachelorPoint<span>.Com</span></h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="{% url 'user-index' %}">Log In</a></li>
+        <!---<li><a href="#">SignUp</a>-->
+        </li>
+        <!-- <li><a href="#">Services <i class="fas fa-caret-down"></i></a>
+
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Wifi Services</a></li>
+                  <li><a href="#">Maid Services</a></li>
+                  <li>
+                    <a href="#">Meal Services <i class="fas fa-caret-right"></i></a>
+                    
+                    <div class="dropdown-menu-1">
+                      <ul>
+                        <li><a href="#">Wifi Services</a></li>
+                        <li><a href="#">Maid Services</a></li>
+                        <li><a href="#">Meal Services</a></li>
+                        <li><a href="#">Team-4</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </div>
+        </li> -->
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+    <div class="hero">
+      <h1 class="typewriter">Welcome To BachelorPoint.Com</h1><br>
+      	<h6 class="par3" style="color: white">In our city bachelor faces various problem.From finding the house to find a maid they faces problem</h6><br>																								
+      <h6 class="par4" style="color: white">To resolve this issues we create a platform for the bachelors.</h6>
+
+      <button class="button-75" role="button"><a href="{% url 'user-index' %}"><span class="text">Join With Us</span></a></button>
+    </div>
+
+    <div class="sv">
+    	<h3 class="s1">Our Services</h3>
+    	<div class="sv1">
+    		<div class="txt1">
+    			<h3 class="ac">Accomodation Services</h3>
+    			<p class="tc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget gravida cum sociis natoque. </p>
+    		</div>
+    		<div class="img1">
+    			<img src="{% static 'img/1.png' %}" alt="Italian Trulli" style="height: 270px">
+    		</div>
+    	</div>
+
+
+    	<div class="sv1">
+    		<div class="txt1">
+    			<h3 class="ac">Meal Services</h3>
+    			<p class="tc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget gravida cum sociis natoque. </p>
+    		</div>
+    		<div class="img1">
+    			<img src="{% static 'img/1.png' %}" alt="Italian Trulli" style="height: 270px">
+    		</div>
+    	</div>
+
+
+
+    	<div class="sv1">
+    		<div class="txt1">
+    			<h3 class="ac">Maid Services</h3>
+    			<p class="tc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget gravida cum sociis natoque. </p>
+    		</div>
+    		<div class="img1">
+    			<img src="{% static 'img/1.png' %}" alt="Italian Trulli" style="height: 270px">
+    		</div>
+    	</div>
+
+    	<div class="sv1">
+    		<div class="txt1">
+    			<h3 class="ac">Wifi Services</h3>
+    			<p class="tc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget gravida cum sociis natoque. </p>
+    		</div>
+    		<div class="img1">
+    			<img src="{% static 'img/1.png' %}" alt="Italian Trulli" style="height: 270px">
+    		</div>
+    	</div>
+
+
+    	<div class="sv1">
+    		<div class="txt1">
+    			<h3 class="ac">Job Opportunities</h3>
+    			<p class="tc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget gravida cum sociis natoque. </p>
+    		</div>
+    		<div class="img1">
+    			<img src="{% static 'img/1.png' %}" alt="Italian Trulli" style="height: 270px">
+    		</div>
+    	</div>
+
+
+
+    	<div class="sv1">
+    		<div class="txt1">
+    			<h3 class="ac">Sell Your Product</h3>
+    			<p class="tc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget gravida cum sociis natoque. </p>
+    		</div>
+    		<div class="img1">
+    			<img src="{% static 'img/1.png' %}" alt="Italian Trulli" style="height: 270px">
+    		</div>
+    	</div>
+    </div>
+
+
+    <div class="footer">
+   	   		<div class="f1">
+   	   			<div class="fh1">
+   	   				<h1 style="line-height: 3; margin-left: 22%; font-family: arial;font-size:35px; font-weight: bold;">BachelorPoint</h1>
+   	   			</div>
+   	   			<div class="fc1">
+   	   				<h3 style="margin-left: 25%; line-height: 2;">Accomodation</h3>
+   	   			</div>
+   	   			<div class="fc2">
+   	   				<h3 style="margin-left: 25%; line-height: 2;">Meal</h3>
+   	   			</div><div class="fc3">
+   	   				<h3 style="margin-left: 25%; line-height: 2;">Maid</h3>
+   	   			</div>
+   	   			<div class="fc4">
+   	   				<h3 style="margin-left: 25%; line-height: 2;">Wifi</h3>
+   	   			</div>
+   	   			<div class="fc4">
+   	   				<h3 style="margin-left: 25%; line-height: 2;">Job</h3>
+   	   			</div>
+   	   			<div class="fc4">
+   	   				<h3 style="margin-left: 25%; line-height: 2;">Sell</h3>
+   	   			</div>
+   	   			
+   	   		</div>
+   	   		<div class="f2">
+   	   			<div class="fh2">
+   	   				<h1 style="line-height: 3; font-family: arial;font-size:35px; font-weight: bold;">Terms&Conditions</h1>
+   	   			</div>
+   	   			<div class="fc5">
+   	   				<h3 style="margin-left: 20%; line-height: 3;">Privacy Policy</h3>
+   	   			</div>
+   	   			<div class="fc6">
+   	   				<h3 style="margin-left: 20%; line-height: 3;">Copyright Policy</h3>
+   	   			</div><div class="fc7">
+   	   				<h3 style="margin-left: 20%; line-height: 3;">Code Of Conduct</h3>
+   	   			</div><div class="fc8">
+   	   				<h3 style="margin-left: 20%; line-height: 3;">Fees & Charges</h3>
+   	   			</div>
+   	   		</div>
+
+   	   		<div class="f3">
+   	   			<div class="fh3">
+   	   				<h1 style="line-height: 3; margin-left: 35%; font-family: arial;font-size:35px; font-weight: bold;">About</h1>
+   	   			</div>
+   	   			<div class="fc9">
+   	   				<h3 style="margin-left: 35%; line-height: 3;">About Us</h3>
+   	   			</div>
+   	   			<div class="fc10">
+   	   				<h3 style="margin-left: 35%; line-height: 3;">How it works</h3>
+   	   			</div><div class="fc11">
+   	   				<h3 style="margin-left: 35%; line-height: 3;">Security</h3>
+   	   			</div>
+   	   			<div class="fc12">
+   	   			  <h3 style="margin-left: 35%; line-height: 3;">Stories</h3>
+   	   			</div>
+   	   		</div>
+   	   		<div class="f4">
+   	   			<div class="fh4">
+   	   				<h1 style="line-height: 3; margin-left: 37%; font-family: arial;font-size:35px; font-weight: bold;">Follow On</h1>
+   	   			</div>
+   	   			<div class="simage">
+   	   				<img src="{% static 'img/fb.png' %}" style="margin-left: 35%">
+   	   				<img src="{% static 'img/twitter.png' %}">
+   	   				<img src="{% static 'img/google.png' %}">
+   	   			</div>
+   	   		</div>
+
+   	   	</div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+pip indtall django
+pip install pymongo==3.12.3
+pip install dnspython
+python manage.py makemigrations
+
+pip install smtplib
+
